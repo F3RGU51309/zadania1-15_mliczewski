@@ -2,15 +2,41 @@
  <head>
  <title>Przykład nr 1 </title>
  <script language="JavaScript">
- function WinOpen() 
+ function WinOpen_mliczewski() 
  {
 window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
  }
+ function WinOpen_Mliczewski_zadanie2()
+         {
+             window.open("zadanie2.html","1","toolbar=no,directories=no,menubar=no,height=280,width=200,top=650,left=100");
+        }
+     
+
+    function WinOpen_Mliczewski_zadanie4()
+         {
+             window.open("zadanie4.html","2","toolbar=no,directories=no,menubar=no,height=280,width=200,top=650,left=300");
+        }
+       
+
+    function WinOpen_Mliczewski_zadanie5()
+         {
+             window.open("zadanie5.html","3","toolbar=no,directories=no,menubar=no,height=280,width=200,top=650,left=500");
+        }
+       
+
+    function WinOpen_Mliczewski_zadanie6()
+         {
+             window.open("zadanie6.html","4","toolbar=no,directories=no,menubar=no,height=280,width=200,top=650,left=700");
+        }
  </script>
  </head>
 <body>
  <form>
- <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
+ <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_mliczewski(' ')">
+   <input type="button" name="przycisk" value="zadanie2(historia)" onclick="WinOpen_Mliczewski_zadanie2(' ')">
+   <input type="button" name="przycisk" value="zadanie4" onclick="WinOpen_Mliczewski_zadanie4(' ')">
+   <input type="button" name="przycisk" value="zadanie5" onclick="WinOpen_Mliczewski_zadanie5(' ')">
+   <input type="button" name="przycisk" value="zadanie6" onclick="WinOpen_Mliczewski_zadanie6(' ')">
  </form>
 </body>
 </html>
