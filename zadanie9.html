@@ -1,0 +1,35 @@
+<html>
+    <head>
+	<div style="color:green;font-size:43px;">
+ <script language="JavaScript">
+function seconds()
+{
+    var D1_mli=prompt("Podaj numer dnia (1-15)","");
+    var G1_mli=prompt("Podaj godzine","");
+    var D2_mli=prompt("Podaj drugi numer dnia (16-31)","");
+    var G2_mli=prompt("Podaj drugą godzine","");
+
+    var a=parseFloat(D1_mli);
+    var b=parseFloat(D2_mli);
+    var c=parseFloat(G1_mli);
+    var d=parseFloat(G2_mli);
+	
+    sum=b-a;
+	
+    godz=c+d;
+
+    iloSEC=godz*3600;
+    sec=sum*86400+iloSEC;
+    document.write("<div style=color:green;font-size:38>Okres Czasu(Dni)="+b+" - "+a+"  = "+sum+"<br></div>");
+    document.write("<div style=color:green;font-size:38>Okres Czasu(Godziny)="+c+" + "+d+"  = "+godz+" * "+3600+" = "+iloSEC+"<br></div>");
+    document.write("<div style=color:green;font-size:38>Ilość Sekund="+sum+" * "+86400+" + "+iloSEC+"  = "+sec+" Sekund<br></div>");
+}
+
+ </script>
+ </head>
+ <body>
+    
+    <input type="button" onclick="seconds()" value="Oblicz" />  
+    
+</body>
+</html>
